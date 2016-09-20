@@ -7,7 +7,7 @@ name = "Maya"
 address = "4187 Via Mar De Delfinas"
 city = "San Diego"
 zip = "92130"
-print(name + address + city + zip)
+print(name\naddress\ncity\nzip)
 
 
 l = 2
