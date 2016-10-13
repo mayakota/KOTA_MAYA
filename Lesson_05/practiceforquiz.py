@@ -1,15 +1,6 @@
 
+item1 = float(input("Please Enter the cost of first item: "))
+item2 = float(input("Please Enter the cost of the second item: "))
 
-area = 0
-radius = 6
-
-def calcRadius():
-    return radius
-    radius = 3.14 *(radius ** 2)
-
-def radPrint():
-    print("The radius of your circle is {:0.3f}",format(radius))
-
-calcRadius()
-radPrint()
-
+def format(one, two):
+    print("The total cost of your order is {:5.2f}".format(item1 + item2))
