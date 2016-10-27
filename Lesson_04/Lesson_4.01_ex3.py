@@ -1,5 +1,5 @@
 def compound(p, r, n, t):
-    a = p * (1 + r / n)**(n * t)
+    a = p * (1 + (r / n))**(n * t)
     return(a / (12 * t))
 
 p = float(input("Enter the principal: "))
