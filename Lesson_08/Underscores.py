@@ -1,10 +1,10 @@
 sentence = input("Please enter a sentence: ")
 
-def replace(string):
-    if string.count(" ") == 0:
-        return string
+def replace(sentence):
+    if sentence.count(" ") == 0:
+        return sentence
     else:
-        string = string[0 : string.index(" ")] + "_" + string[string.index(" ")+1 : len(string)]
-        print(string)
+       return sentence[0 : sentence.index(" ")] + "_" + replace(sentence[sentence.index(" ")+1 : len(sentence)])
+        
 
-print(sentence)
+print(replace(sentence))
