@@ -8,4 +8,7 @@ def gFactor(nums):
             return 0
 def removePrimes():
     if gFactor(num) == 0:
-        
+
+
+removePrimes()
+print(nums)
