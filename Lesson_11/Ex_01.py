@@ -1,5 +1,5 @@
 class MilesPerHour:
-    def __int__(self, d, h, m):
+    def __init__(self, d, h, m):
         self.distance = d
         self.hours = h
         self.minutes = m
@@ -21,7 +21,7 @@ class MilesPerHour:
         return self.minutes
 
     def getMPH(self):
-        self.mph = self.distance / ((self.hours + self.minutes) / 60.0)
+        self.mph = self.distance/(self.hours + self.minutes / 60.0)
         return self.mph
 
 def main():
@@ -29,9 +29,9 @@ def main():
     hours = int(input("Please enter the hours: "))
     minutes = int(input("Please enter the minutes: "))
 
-    newUser = MilesPerHour(distance, hours, minutes)
-    print(newUser.getDist(), "miles in", newUser.getHours(), "hours and", newUiser.getMins(), "=", user.MPH())
-    newUser.setValues(10, 2, 0)
-    print(newUser.getDist(), "miles in", newUser.getHours(), "hours and", newUiser.getMins(), "=", user.MPH())
+    user1 = MilesPerHour(distance, hours, minutes)
+    print(user1.getDist(), "miles in", user1.getHours(), "hours and", user1.getMins(), "=", user1.getMPH())
+    user1.setValues(10, 2, 0)
+    print(user1.getDist(), "miles in", user1.getHours(), "hours and", user1.getMins(), "=", user1.getMPH())
 
 main()
