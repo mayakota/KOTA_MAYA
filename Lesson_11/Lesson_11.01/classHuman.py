@@ -24,6 +24,18 @@ def main():
     skin = input("Please enter your skin color: ")
 
     features = human(hair, eyes, skin)
+
+    print("My info... ")
+    print("Hair: black")
+    print("Eyes: brown")
+    print("Skin: tan")
+
+    print("Your info...")
+    print("Hair", features.getHair())
+    print("Eyes", features.getEyes())
+    print("Skin", features.getSkin())
+
+main()
     
     
     
