@@ -5,14 +5,14 @@ class Item:
         self.itemName = tName
         self.itemCategory = tCategory
         self.itemPrice = tPrice
-        self.userUPC = random.randint(0, 1000000)
+        self.userUPC = random.randint(1000000000, 10000000000)
 
     def setTHING(self, newItemManufacturer, newitemName, newitemCategory, newitemPrice):
         self.itemManufacturer = newItemManufacturer
         self.itemName = newItemName
         self.itemCategory = newItemCategory
         self.itemPrice = newItemPrice
-        self.userUPC = random.randint(0, 1000000)
+        self.userUPC = random.randint(1000000000, 10000000000)
 
     
     def getItemManufacturer(self):
