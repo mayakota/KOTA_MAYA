@@ -1,23 +1,23 @@
 * {
-	color:yellow;
+	color:black;
 }
 
 p:not(.torrey){
-	color: orange;
+	color: purple;
 }
 
 tr:nth-child(odd) > td:nth-child(even){
-	background-color:green;
+	background-color:lavender;
 }
 
 tr:nth-child(odd) > td:nth-child(odd){
-	background-color:red;
+	background-color:lightblue;
 }
 
 tr:nth-child(even) > td:nth-child(odd){
-	background-color:green;
+	background-color:lavender;
 }
 
 tr:nth-child(even) > td:nth-child(even){
-	background-color:red;
+	background-color:lightblue;
 }
