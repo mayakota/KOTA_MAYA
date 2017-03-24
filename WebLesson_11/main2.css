@@ -49,6 +49,7 @@ body {
 	float: left;
 	width: 660px;
 	margin: 30px; /* 720 total px, 280 left*/
+	-webkit-box-ordinal-group: 1;
 }
 
 #sideNews {
