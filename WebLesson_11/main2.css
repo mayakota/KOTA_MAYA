@@ -45,6 +45,11 @@ body {
 	font: bold 14px Tahoma;
 }
 
+#flexDiv {
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
 #mainSection {
 	float: left;
 	width: 660px;
@@ -58,7 +63,7 @@ body {
 	margin: 20px 0px;
 	padding: 30px;
 	background: lightblue;
-	color: blue
+	-webkit-box-ordinal-group: 2;
 }
 
 #pageFooter {
