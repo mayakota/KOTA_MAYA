@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form name = "input">
+        Username: <input type = "text" name = "username"/><br/><br/>
+        Password: <input type = "password" name = "password"/><br/><br/>
+        <input type = "submit" value = "Submit!" onClick = "validate()"/>
+    </form>
+    <script type = "text/javascript">
+        function validate(){
+            var x = document.forms.input.username.value;
+            var atPos = x.indexOf("@");
+            var dotPos = x.lastIndexOf("");
+            var y = document.forms.input.password.value;
+
+            if((atPos < 1 || dotPos < atPos+2 || dotPos + 2 > x.length))
+                    alert("This is not a valid username!");
+
+            else
+        }
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
