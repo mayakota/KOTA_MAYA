@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Username and Password</title>
 </head>
 <body>
     <form name = "input">
@@ -18,9 +18,20 @@
             var y = document.forms.input.password.value;
 
             if((atPos < 1 || dotPos < atPos+2 || dotPos + 2 > x.length))
-                    alert("This is not a valid username!");
+                    alert("We were unable to process your request. Please correct the following..." +
+                    "This is not a valid email address" +
+                    "Your password does not meet the minimum requirements");
 
-            else
+            else {
+                if (atPos < 1 || dotPos < atPos + 2 || dotPos + 2 > x.length)
+                    alert("We were unable to process your request. Please correct the following.." +
+                                "Your password does not meet the minimum requirements");
+                else if (y.length < 6)
+                    alert("We were unable to process your request. Please correct the following.." +
+                            "Your password does not meet the minimum requirements");
+                else
+                    alert("Success!")
+            }
         }
 
 
