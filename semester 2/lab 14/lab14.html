@@ -8,27 +8,24 @@
     <form name = "input">
         Username: <input type = "text" name = "username"/><br/><br/>
         Password: <input type = "password" name = "password"/><br/><br/>
-        <input type = "submit" value = "Submit!" onClick = "validate()"/>
+        <input type = "submit" value = "Submit!" onClick = "getValue()"/>
     </form>
     <script type = "text/javascript">
-        function validate(){
+        function getValue(){
             var x = document.forms.input.username.value;
-            var atPos = x.indexOf("@");
-            var dotPos = x.lastIndexOf("");
-            var y = document.forms.input.password.value;
+            var y = x.indexOf("@");
+            var z = x.lastIndexOf("");
+            var a = document.forms.input.password.value;
 
-            if((atPos < 1 || dotPos < atPos+2 || dotPos + 2 > x.length))
+            if((y < 1 || z < y + 2 || z + 2 > x.length && a.length < 6))
                     alert("We were unable to process your request. Please correct the following..." +
-                    "This is not a valid email address" +
-                    "Your password does not meet the minimum requirements");
+                         "This is not a valid email address" +  "Your password does not meet the minimum requirements");
 
             else {
-                if (atPos < 1 || dotPos < atPos + 2 || dotPos + 2 > x.length)
-                    alert("We were unable to process your request. Please correct the following.." +
-                                "Your password does not meet the minimum requirements");
-                else if (y.length < 6)
-                    alert("We were unable to process your request. Please correct the following.." +
-                            "Your password does not meet the minimum requirements");
+                if (y < 1 || z < y + 2 || z + 2 > x.length)
+                    alert("Error. Please enter a valid email address");
+                else if (a.length < 6)
+                    alert("Error. Your password does not meet the minimum requirements, which is 6");
                 else
                     alert("Success!")
             }
