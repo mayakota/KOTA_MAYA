@@ -1,0 +1,20 @@
+#leftBox{
+    float:left;
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    border: 3px solid red;
+
+}
+
+#rightBox{
+    float:left;
+    width: 300px;
+    height: 250px;
+    margin: 5px;
+    border: 3px solid black;
+}
+
+#dog{
+    max-height: 250px;
+}

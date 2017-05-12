@@ -13,8 +13,8 @@ function drag() {
 }
 
 function startDrag(e) {
-    var pic = <img id = "dog" src = "http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" >;
-    e.dataTransfer.setData("Picture", pic);
+    var pic = '<img id = "dog" src = "http://r.ddmcdn.com/s_f/o_1/cx_633/cy_0/cw_1725/ch_1725/w_720/APL/uploads/2014/11/too-cute-doggone-it-video-playlist.jpg" >';
+    e.dataTransfer.setData('Picture', pic);
 }
 
 function dragEnter(e) {
@@ -29,13 +29,15 @@ function drop(e) {
 
 function endDrag(e) {
     pic = e.target;
-    pic.style.visibility = "hidden"
-
-
-
-
-
-
-
-
+    pic.style.visibility = "hidden";
 }
+
+window.addEventListener("load", drag, false);
+
+
+
+
+
+
+
+
